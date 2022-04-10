@@ -7,9 +7,9 @@ class MidiFXProcessor : public PluginHelpers::ProcessorBase
 public:
     MidiFXProcessor()
     {
-        note1 = new juce::AudioParameterInt("First", "First", 0, 127, 40);
-        note2 = new juce::AudioParameterInt("Second", "Second", 0, 127, 40);
-        note3 = new juce::AudioParameterInt("Third", "Third", 0, 127, 40);
+        note1 = new juce::AudioParameterInt("First", "First", 0, 127, 60);
+        note2 = new juce::AudioParameterInt("Second", "Second", 0, 127, 64);
+        note3 = new juce::AudioParameterInt("Third", "Third", 0, 127, 67);
 
         addParameter(note1);
         addParameter(note2);
